@@ -46,7 +46,7 @@ Tüm gereksinimlerinizi çıkardıktan sonra beraber tartışıyoruz ve son gere
 22. **Arkadaş Ekle** (Furkan Tatar)
 23. **Arkadaşlarımı Göster** (Furkan Tatar)
 24. **Arkadaş Silme** (Mustafa Uğur Tuluk)
-25. **Maç Aratma** (?)
+25. **Maç Aratma** (Mehmet Erkutay Halil)
 
 # Gereksinim Dağılımları
 

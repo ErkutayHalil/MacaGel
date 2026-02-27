@@ -20,3 +20,8 @@
 6. **Hesabı Silme**
    - **API Metodu:** `DELETE /maca-gel/deleteAccount`
    - **Açıklama:** Kullanıcının hesabını sistemden kalıcı olarak silmesini sağlar. Kullanıcı hesabını kapatmak istediğinde veya yönetici tarafından hesap kapatılması gerektiğinde kullanılır. Bu işlem geri alınamaz ve kullanıcının tüm verileri silinir. Güvenlik için giriş yapmış olmak gerekir.
+
+6. **Maç Aratma**
+   - **API Metodu:** `GET /maca-gel/searchMatch`
+   - **Açıklama:** Kullanıcı kendi seçtiği kriterlere göre maçları aratır. (İl, ilçe, tesis, tarih ve saat bilgilerini seçer.)
+   
