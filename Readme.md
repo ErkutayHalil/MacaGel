@@ -4,7 +4,7 @@
 
 ## Proje Hakkında
 
-![Ürün Tanıtım Görseli](macaGel.png)
+![Ürün Tanıtım Görseli](macagel.png)
 
 **Proje Tanımı: MaçaGel, halı saha organizasyonlarında yaşanan "eksik oyuncu" problemine yenilikçi bir çözüm sunan, bir pazar yeri platformudur. Uygulama üzerinden halı saha sahipleri veya maç organizatörleri, oluşturdukları maçları listeleyebilir; bireysel kullanıcılar ise konuma ve saate göre uygun maçları görüntüleyerek boş kontenjanlara müracaat edebilirler. Kullanıcılar, maçlardaki boş mevkileri (kaleci, defans, forvet vb.) anlık olarak görebilir ve kendilerine en uygun takıma dahil olarak futbol deneyimini kesintisiz sürdürebilirler.** 
 
