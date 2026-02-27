@@ -1,15 +1,23 @@
-1. **Üye Olma**
-   - **API Metodu:** `POST /auth/register`
-   - **Açıklama:** Kullanıcıların yeni hesaplar oluşturarak sisteme kayıt olmasını sağlar. Kişisel bilgilerin toplanmasını ve hesap oluşturma işlemlerini içerir. Kullanıcılar email adresi ve şifre belirleyerek hesap oluşturur.
+1. **Maçtaki Kişilerin Bilgisini Çekme**
+   - **API Metodu:** `GET /maca-gel/getMatchPlayers`
+   - **Açıklama:** Kişinin Seçtiği maç kartında bulunan kişileri sayfa açılırken çeker.
 
-2. **Profil Görüntüleme**
-   - **API Metodu:** `GET /users/{userId}`
-   - **Açıklama:** Kullanıcının profil bilgilerini görüntülemesini sağlar. Kullanıcı adı, email, telefon gibi kişisel bilgiler ve hesap durumu gösterilir. Kullanıcılar kendi profil bilgilerini görüntüleyebilir veya yöneticiler diğer kullanıcıların bilgilerini inceleyebilir. Güvenlik için giriş yapmış olmak gerekir.
+2. **Arkadaşlarımı Göster**
+   - **API Metodu:** `GET /maca-gel/myFriends`
+   - **Açıklama:** Kullanıcının arkadaş olduğu kişileri gösterir.
 
-3. **Profil Güncelleme**
-   - **API Metodu:** `PUT /users/{userId}`
-   - **Açıklama:** Kullanıcının profil bilgilerini güncellemesini sağlar. Kullanıcılar ad, soyad, email, telefon gibi kişisel bilgilerini değiştirebilir. Güvenlik için giriş yapmış olmak gerekir ve kullanıcılar yalnızca kendi bilgilerini güncelleyebilir.
+3. **Giriş Yapma**
+   - **API Metodu:** `PUT /maca-gel/login`
+   - **Açıklama:** Kullanıcı Girişini yapar(BenimId'm ile Benim Name'im dönecek)
 
-4. **Hesap Silme**
-   - **API Metodu:** `DELETE /users/{userId}`
-   - **Açıklama:** Kullanıcının hesabını sistemden kalıcı olarak silmesini sağlar. Kullanıcı hesabını kapatmak istediğinde veya yönetici tarafından hesap kapatılması gerektiğinde kullanılır. Bu işlem geri alınamaz ve kullanıcının tüm verileri silinir. Güvenlik için giriş yapmış olmak gerekir.
+4. **Arkadaş Ekle**
+   - **API Metodu:** `POST /maca-gel/addFriend`
+   - **Açıklama:** Arkadaş olma istegi atar.
+
+5. **Maça Kod İle Katıl**
+   - **API Metodu:** `PUT /maca-gel/inviteCode`
+   - **Açıklama:** Kullanıcı girdigi Kod ile ilgili koddaki maça katılır.
+
+6. **Maçtan Çıkart**
+   - **API Metodu:** `DELETE /maca-gel/quite`
+   - **Açıklama:** Yöneticinin Kick işlemi ile Kullanıcının Çıkış işleminin isteğini yapar (DB'den tek satır siler, matchId ile userId(çıkıcak olan/atılacak olan kişinin) gönderilir)
